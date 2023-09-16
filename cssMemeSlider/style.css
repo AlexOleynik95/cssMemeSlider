@@ -1,0 +1,112 @@
+:root {
+  --bg: #25282a;
+  --light-blue: #71abff;
+  --biege: #d0ba91;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+input[type=radio],
+input[type=radio]:hover,
+input[type=radio]:checked {
+  appearance: none;
+}
+
+input[type=radio] {
+  background-color: var(--light-blue);
+  border: 1px solid var(--light-blue);
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+input[type=radio]:hover {
+  background-color: white;
+}
+
+input[type=radio]:active {
+  background-color: var(--biege);
+}
+
+input[type=radio]:checked {
+  background-color: var(--bg);
+  cursor: default;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 1em;
+}
+
+.media-container {
+  width: 20em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.media-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.media {
+  width: 20em;
+  height: 20em;
+  border-radius: 0.5em;
+}
+
+.text {
+  font-size: 1.5em;
+  color: white;
+}
+
+.slider {
+  position: absolute;
+  margin: 21.5em auto;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-area {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.link {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* .text-container {
+  height: 1.75em;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow: hidden;
+} */
