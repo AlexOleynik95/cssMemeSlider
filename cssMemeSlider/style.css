@@ -53,7 +53,7 @@ input[type=radio]:checked {
 }
 
 .media-container {
-  width: 20em;
+  width: 40em;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -66,9 +66,9 @@ input[type=radio]:checked {
 }
 
 .media {
-  width: 20em;
-  height: 20em;
-  border-radius: 0.5em;
+  width: 40em;
+  height: 40em;
+  border-radius: 1em;
 }
 
 .text {
@@ -78,7 +78,7 @@ input[type=radio]:checked {
 
 .slider {
   position: absolute;
-  margin: 21.5em auto;
+  margin: 41.5em auto;
 }
 
 .radio {
@@ -110,3 +110,54 @@ input[type=radio]:checked {
   margin: 0 auto;
   overflow: hidden;
 } */
+
+.smiley {
+  display: inline-flex;
+  animation: rotate 1s infinite linear;
+  user-select: none;
+}
+
+.smiley:hover {
+  animation-name: rotate-reverse;
+  cursor: none;
+}
+
+.code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.text-small {
+  font-size: 0.7em;
+}
+
+.jumpy {
+  animation: jump 1s infinite linear;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotate-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}
+
+@keyframes jump {
+  33% {
+    transform: translateY(0.2em);
+  }
+  66% {
+    transform: translateY(0);
+  }
+}
